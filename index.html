@@ -3,12 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BT18</title>
+    <title>BC68_BT18</title>
+    <!-- GG font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>Xin chao</header>
-    <footer></footer>
+    <div class="container">
+      <div class="head">
+        <input type="number" required />
+        <button class="btn head-btn">Thêm số</button>
+        <div class="head-text">👉</div>
+      </div>
+
+      <div id="accordion">
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">1</span>
+              <span>Tổng số dương</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-1">Tính tổng</button>
+            <div class="accordion-text accordion-text-1">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">2</span>
+              <span>Đếm số dương</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-2">Đếm số</button>
+            <div class="accordion-text accordion-text-2">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">3</span>
+              <span>Tìm số nhỏ nhất</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-3">Tìm số nhỏ nhất</button>
+            <div class="accordion-text accordion-text-3">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">4</span>
+              <span>Tìm số dương nhỏ nhất</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-4">Tìm số dương nhỏ nhất</button>
+            <div class="accordion-text accordion-text-4">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">5</span>
+              <span>Tìm số chẵn cuối cùng</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-5">Tìm số chẵn cuối cùng</button>
+            <div class="accordion-text accordion-text-5">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">6</span>
+              <span>Đổi chỗ</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-6">Đổi chỗ</button>
+            <div class="accordion-input">
+              <input
+                type="number"
+                placeholder="Nhập vị trí số 1"
+                class="input-6-1"
+              />
+              <input
+                type="number"
+                placeholder="Nhập ví trí số 2"
+                class="input-6-2"
+              />
+            </div>
+            <div class="accordion-text accordion-text-6">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">7</span>
+              <span>Sắp xếp tăng dần</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-7">Sắp xếp</button>
+            <div class="accordion-text accordion-text-7">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">8</span>
+              <span>Tìm số nguyên tố đầu tiên</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-8">Tìm số nguyên tố</button>
+            <div class="accordion-text accordion-text-8">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">9</span>
+              <span>Đếm số nguyên</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <input type="number" class="input-9" />
+            <button class="btn btn-9-1">Thêm số</button>
+            <div class="accordion-text accordion-text-9-1">👉</div>
+            <button class="btn btn-9-2">Đếm số nguyên</button>
+            <div class="accordion-text accordion-text-9-2">👉</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-button">
+            <div>
+              <span class="accordion-number">10</span>
+              <span>So sánh số lượng số âm và số dương</span>
+            </div>
+            <i class="fa-solid fa-chevron-down icon-down"></i>
+            <i class="fa-solid fa-chevron-up icon-up"></i>
+          </button>
+          <div class="accordion-content">
+            <button class="btn btn-10">So sánh</button>
+            <div class="accordion-text accordion-text-10">👉</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

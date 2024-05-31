@@ -1,0 +1,144 @@
+:root {
+  --primary-color: rgb(75, 112, 226);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+  background-color: white;
+}
+
+.container {
+  width: 768px;
+  margin: 5% auto;
+  padding: 30px 50px;
+  border-radius: 5px;
+  background-image: url(https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg);
+}
+
+.head input {
+  width: 400px;
+  padding: 5px 15px;
+  outline: none;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 1.6rem;
+  margin-right: 15px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.head .head-text {
+  background-color: white;
+  min-height: 80px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#accordion {
+  margin-top: 50px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#accordion .accordion-item {
+  border: 1px solid #ccc;
+}
+
+#accordion .accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+#accordion .accordion-item.active .accordion-content {
+  height: auto;
+}
+
+#accordion .accordion-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  outline: none;
+  background-color: white;
+  outline: none;
+  border-color: transparent;
+}
+
+#accordion .accordion-number {
+  background-color: var(--primary-color);
+  padding: 1px 10px;
+  color: white;
+  border-radius: 2px;
+}
+
+#accordion .accordion-content .btn {
+  margin: 20px 15px;
+}
+
+#accordion .accordion-input {
+  margin: 15px 20px;
+}
+
+input {
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#accordion .accordion-content .accordion-text {
+  background-color: rgba(174, 230, 187, 0.445);
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 1.6rem;
+  min-height: 50px;
+  margin: 15px 10px;
+  border-radius: 5px;
+}
+
+#accordion .accordion-item.active .accordion-button {
+  color: var(--primary-color);
+  background-color: rgba(75, 113, 226, 0.259);
+}
+
+#accordion .accordion-item .icon-up {
+  display: none;
+}
+
+#accordion .accordion-item.active .icon-up {
+  display: block;
+}
+
+#accordion .accordion-item.active .icon-down {
+  display: none;
+}
